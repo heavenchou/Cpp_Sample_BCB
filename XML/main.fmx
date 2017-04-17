@@ -1,0 +1,33 @@
+object fmMain: TfmMain
+  Left = 0
+  Top = 0
+  Caption = 'Read XML'
+  ClientHeight = 169
+  ClientWidth = 340
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #35712#21462' XML'
+    OnClick = Button1Click
+  end
+  object XMLDocument1: TXMLDocument
+    XML.Strings = (
+      '<Item>'
+      #9'<Name id="heaven" id2="id22" id3="id33">Heaven Chou</Name>'
+      #9'<Age>18</Age>'
+      #9'<Add><City>'#39640#38596'</City><Road>'#22823#39340#36335'</Road></Add>'
+      #9'<Tel><Home>07-1234567</Home><Mobile>0939-987654</Mobile>'
+      #9'</Tel>'
+      '</Item>')
+    Left = 240
+    Top = 32
+  end
+end
