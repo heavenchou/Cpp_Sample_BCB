@@ -15,12 +15,22 @@
 #include <Xml.omnixmldom.hpp>
 #include <Xml.adomxmldom.hpp>
 #include <Xml.Win.msxmldom.hpp>
+#include <FMX.Layouts.hpp>
+#include <FMX.TreeView.hpp>
 //---------------------------------------------------------------------------
 class TfmMain : public TForm
 {
 __published:	// IDE-managed Components
 	TButton *Button1;
 	TXMLDocument *XMLDocument1;
+	TTreeView *TreeView1;
+	TTreeViewItem *TreeViewItem1;
+	TTreeViewItem *TreeViewItem2;
+	TTreeViewItem *TreeViewItem3;
+	TTreeViewItem *TreeViewItem4;
+	TTreeViewItem *TreeViewItem5;
+	TTreeViewItem *TreeViewItem6;
+	TPanel *Panel1;
 	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

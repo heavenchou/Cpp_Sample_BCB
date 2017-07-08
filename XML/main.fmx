@@ -2,8 +2,8 @@ object fmMain: TfmMain
   Left = 0
   Top = 0
   Caption = 'Read XML'
-  ClientHeight = 169
-  ClientWidth = 340
+  ClientHeight = 554
+  ClientWidth = 679
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -17,6 +17,71 @@ object fmMain: TfmMain
     TabOrder = 0
     Text = #35712#21462' XML'
     OnClick = Button1Click
+  end
+  object TreeView1: TTreeView
+    DragMode = dmAutomatic
+    Position.X = 24.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 369.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 245.000000000000000000
+    Viewport.Height = 365.000000000000000000
+    object TreeViewItem1: TTreeViewItem
+      DragMode = dmAutomatic
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 0
+      Text = 'TreeViewItem1'
+    end
+    object TreeViewItem2: TTreeViewItem
+      DragMode = dmAutomatic
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 1
+      Text = 'TreeViewItem2'
+      object TreeViewItem3: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'TreeViewItem3'
+      end
+      object TreeViewItem4: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 1
+        Text = 'TreeViewItem4'
+      end
+    end
+    object TreeViewItem5: TTreeViewItem
+      DragMode = dmAutomatic
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 2
+      Text = 'TreeViewItem5'
+      object TreeViewItem6: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'TreeViewItem6'
+      end
+    end
+  end
+  object Panel1: TPanel
+    DragMode = dmAutomatic
+    Position.X = 368.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 393.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
   end
   object XMLDocument1: TXMLDocument
     XML.Strings = (

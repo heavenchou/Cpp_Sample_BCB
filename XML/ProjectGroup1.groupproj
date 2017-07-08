@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{83854C85-499C-43DD-8E6E-AD0E6D4109D6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="read_xml.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="xml_test.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="read_xml">
+        <MSBuild Projects="read_xml.cbproj"/>
+    </Target>
+    <Target Name="read_xml:Clean">
+        <MSBuild Projects="read_xml.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="read_xml:Make">
+        <MSBuild Projects="read_xml.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="xml_test">
+        <MSBuild Projects="xml_test.cbproj"/>
+    </Target>
+    <Target Name="xml_test:Clean">
+        <MSBuild Projects="xml_test.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="xml_test:Make">
+        <MSBuild Projects="xml_test.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="read_xml;xml_test"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="read_xml:Clean;xml_test:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="read_xml:Make;xml_test:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
