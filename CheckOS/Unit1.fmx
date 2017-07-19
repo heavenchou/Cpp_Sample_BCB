@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 419
+  ClientWidth = 551
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object CornerButton1: TCornerButton
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 113.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #21028#26039' OS'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Win32 '#19979#26597#21040#30340#26377
+      ''
+      '_WINDOWS_'
+      '_Windows'
+      'WIN32'
+      '_WIN32'
+      '__WIN32__'
+      ''
+      'Win64 '#19979#26597#21040#30340#26377
+      ''
+      '_WINDOWS_'
+      '_Windows'
+      'WIN32'
+      '_WIN32'
+      '_WIN64')
+    StyledSettings = [Style, FontColor]
+    TextSettings.Font.Family = 'Times New Roman'
+    TextSettings.Font.Size = 16.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 345.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 341.000000000000000000
+    Viewport.Height = 341.000000000000000000
+  end
+end
