@@ -16,6 +16,8 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::CornerButton1Click(TObject *Sender)
 {
+	ShowMessage("Start");
+
 #ifdef WINDOWS
 	ShowMessage("WINDOWS");
 #endif
@@ -120,5 +122,19 @@ void __fastcall TForm1::CornerButton1Click(TObject *Sender)
 #ifdef __Win64__
 	ShowMessage("__Win64__");
 #endif
+
+#ifdef __ANDROID__
+	ShowMessage("__ANDROID__");
+#endif
+#ifdef __APPLE__
+	ShowMessage("__APPLE__");
+#endif
+#ifdef __arm__
+	ShowMessage("__arm__");
+#endif
+#ifdef __arm64__
+	ShowMessage("__arm64__");
+#endif
+
 }
 //---------------------------------------------------------------------------
