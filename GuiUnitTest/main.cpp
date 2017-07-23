@@ -18,9 +18,9 @@ __fastcall TfmMain::TfmMain(TComponent* Owner)
 
 	// 代刚ン
 	Sample = new CSample(Titles, Results);
-	ListBoxAddHead("代刚ボ絛");
+	ListBoxAddHead(u"代刚ボ絛");
 	Sample->RunAllTest();
-	ListBoxAddHead("代刚ボ絛2");
+	ListBoxAddHead(u"代刚ボ絛2");
 	Sample->RunAllTest();
 }
 //---------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+GuiUnitTest.app\Contents\Info.plist
+GuiUnitTest.app\Contents\MacOS\libcgcrtl.dylib
+GuiUnitTest.app\Contents\MacOS\bplrtl250.dylib
+GuiUnitTest.app\Contents\MacOS\libcgstl.dylib
+GuiUnitTest.app\Contents\MacOS\libcgsqlite3.dylib
+GuiUnitTest.app\Contents\MacOS\GuiUnitTest
+GuiUnitTest.app\Contents\Resources\GuiUnitTest.icns
+GuiUnitTest.app\Contents\MacOS\libcgunwind.1.0.dylib
+GuiUnitTest.app\..\GuiUnitTest.entitlements
+GuiUnitTest.app\Contents\MacOS\bplfmx250.dylib
+GuiUnitTest.app\Contents\MacOS\GuiUnitTest.tds
