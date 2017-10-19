@@ -8,3 +8,4 @@ __history
 Win32
 Win64
 /CheckOS/OSX32
+/GuiUnitTest/OSX32
