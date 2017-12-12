@@ -1,0 +1,73 @@
+object fmMain: TfmMain
+  Left = 0
+  Top = 0
+  Caption = #22739#32302#28204#35430
+  ClientHeight = 402
+  ClientWidth = 452
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btZipUnzipStr: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #22739#32302#23383#20018#20877#35299#22739
+    OnClick = btZipUnzipStrClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Text = #28204#35430#37474#30586#55360#56866
+    Position.X = 24.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btFile2FileUnzip: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = #27161#28310#27284#26696#36681#27284#26696'-'#35299#22739#32302
+    OnClick = btFile2FileUnzipClick
+  end
+  object btFile2FileZip: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = #27161#28310#27284#26696#36681#27284#26696'-'#22739#32302
+    OnClick = btFile2FileZipClick
+  end
+  object btString2FileZip: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = #19968#20018#25991#23383#22739#32302#25104#27284#26696
+    OnClick = btString2FileZipClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 24.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 389.000000000000000000
+    Viewport.Height = 125.000000000000000000
+  end
+end
